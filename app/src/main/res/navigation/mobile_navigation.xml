@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_statisticvariableexpenses"
+        android:name="com.example.financial1.ui.Statistic.StatisticVariableExpensesFragment"
+        android:label="Expenses Statistic"
+        tools:layout="@layout/fragment_variable_expenses_statistic" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.financial1.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_variable_expenses"
+        android:name="com.example.financial1.ui.MonetaryExpenses.VariableExpensesFragment"
+        android:label="Variable Expenses"
+        tools:layout="@layout/fragment_variable_expenses" />
+    <fragment
+        android:id="@+id/nav_revenue"
+        android:name="com.example.financial1.ui.MonetaryRevenue.RevenueFragment"
+        android:label="Revenue"
+        tools:layout="@layout/fragment_revenue" />
+    <fragment
+        android:id="@+id/nav_financialsummary"
+        android:name="com.example.financial1.ui.FinancialSummary.FinancialSummaryFragment"
+        android:label="Financial Summary"
+        tools:layout="@layout/fragment_financial_summary" />
+
+    <fragment
+        android:id="@+id/nav_introduction"
+        android:name="com.example.financial1.ui.Introduction.IntroductionFragment"
+        android:label="Privacy Policy"
+        tools:layout="@layout/fragment_introduction" />
+    <fragment
+        android:id="@+id/nav_statisticrevenue"
+        android:name="com.example.financial1.ui.Statistic.StatisticRevenueFragment"
+        android:label="Revenue Statistic"
+        tools:layout="@layout/fragment_revenue_statistic" />
+    <fragment
+        android:id="@+id/nav_recurringExpenses"
+        android:name="com.example.financial1.ui.MonetaryExpenses.RecurringExpenseFragment"
+        android:label="Recurring Expenses"
+        tools:layout="@layout/fragment_recurring_expenses" />
+    <fragment
+        android:id="@+id/nav_exit"
+        android:name="com.example.financial1.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/fragment_type_of_variable_expenses"
+        android:name="com.example.financial1.ui.MonetaryExpenses.VariableExpensesFragment"
+        android:label="Type of Variable Expenses"
+        tools:layout="@layout/fragment_type_of_variable_expenses" />
+    <fragment
+        android:id="@+id/fragment_amount_of_variable_expenses"
+        android:name="com.example.financial1.ui.MonetaryExpenses.VariableExpensesFragment"
+        android:label="Type of Variable Expenses"
+        tools:layout="@layout/fragment_type_of_variable_expenses" />
+    <fragment
+        android:id="@+id/fragment_variable_expenses"
+        android:name="com.example.financial1.ui.MonetaryExpenses.VariableExpensesFragment"
+        android:label="Type of Variable Expenses"
+        tools:layout="@layout/fragment_type_of_variable_expenses" />
+
+</navigation>

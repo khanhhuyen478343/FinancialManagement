@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral_variant95"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"> <!-- Nền sáng giúp nổi bật các thành phần -->
+
+    <!-- Tiêu đề đăng nhập -->
+    <!-- Sử dụng màu hồng MoMo cho tiêu đề -->
+
+    <!-- Frame Login chứa các trường thông tin -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/FrameLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="70dp"
+        android:padding="10dp"
+        android:text="Login"
+        android:textColor="@color/momoPink"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/FrameLogin"
+        android:layout_width="380dp"
+        android:layout_height="430dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="68dp"
+        android:orientation="vertical">
+
+        <!-- Tên đăng nhập -->
+
+        <!-- Mật khẩu -->
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="363dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_white_background"
+            android:drawablePadding="8dp"
+            android:hint="User Name"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="363dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_white_background"
+            android:drawablePadding="8dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <!-- Nút đăng nhập -->
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="363dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/momoPink"
+            android:padding="10dp"
+            android:text="Login"
+            android:textColor="@color/white" />
+
+        <!-- Nút quên mật khẩu -->
+
+        <!-- Liên kết đăng ký -->
+
+        <TextView
+            android:id="@+id/tvRegister2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Forgot Password ?"
+            android:textAlignment="center"
+            android:textColor="@color/momoPink"
+            android:textColorLink="@color/momoPink"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Don't have an account ? Register"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorLink="@color/momoPink"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

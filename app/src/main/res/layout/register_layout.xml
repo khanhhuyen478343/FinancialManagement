@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral_variant95"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"> <!-- Nền sáng giúp nổi bật các thành phần -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/FrameRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:text="Register"
+        android:textColor="@color/momoPink"
+        android:textSize="30sp"
+        android:textStyle="bold" /> <!-- Sử dụng màu hồng MoMo cho tiêu đề -->
+
+    <LinearLayout
+        android:id="@+id/FrameRegister"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="95dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="363dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorText"
+            android:drawablePadding="4dp"
+            android:hint="User Name"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            tools:background="@drawable/rounded_white_background" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="363dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+
+            android:background="@color/colorText"
+            android:drawablePadding="4dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            tools:background="@drawable/rounded_white_background" />
+
+        <RadioGroup
+            android:id="@+id/rdSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdMale"
+                android:layout_width="76dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Male"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/rdFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Female"
+                android:textColor="@color/black" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="363dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+
+            android:background="@color/colorText"
+            android:drawablePadding="4dp"
+            android:hint="Phone Number"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            tools:background="@drawable/rounded_white_background" />
+
+        <EditText
+            android:id="@+id/etIdCard"
+            android:layout_width="363dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+
+            android:background="@color/colorText"
+            android:drawablePadding="4dp"
+            android:hint="ID Card"
+            android:numeric="integer"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            tools:background="@drawable/rounded_white_background" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btExit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"
+                android:padding="10dp"
+                android:text="Exit"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btAccept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/momoPink"
+                android:padding="10dp"
+                android:text="Register"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAlreadyHaveAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/FrameRegister"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Already have an account? Log in"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorLink="@color/momoPink"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

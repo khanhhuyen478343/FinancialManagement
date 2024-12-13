@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#75e1ff</color>
+    <color name="purple_500">#00cac6</color>
+    <color name="purple_700">#FDEAF4</color>
+    <color name="teal_200">#A9DC28</color>
+    <color name="teal_700">#ff9c53</color>
+    <color name="momoPink">#ff0099</color>
+    <color name="lightGray">#d9f3ea</color>
+    <color name="gray">#A9A9A9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="colorBackground">#FF4B4B</color> <!-- Màu hồng chủ đạo -->
+    <color name="colorAccent">#FF6F61</color> <!-- Màu hồng nhạt -->
+    <color name="colorText">#FFFFFF</color> <!-- Màu chữ trắng -->
+</resources>

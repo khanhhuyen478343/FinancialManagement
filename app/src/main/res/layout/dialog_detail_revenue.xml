@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="396dp"
+            android:layout_height="51dp"
+            android:layout_margin="0dp"
+            android:background="@drawable/rounded_corners"
+            android:gravity="center"
+            android:text=" Revenue Information "
+            android:textColor="@color/colorText"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="395dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Revenue Name"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvRevenueName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:gravity="center|left"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Amount Of Money"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvRevenueAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:gravity="center|left"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Revenue Type"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvRevenueType"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:gravity="center|left"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="Revenue Date" />
+
+                <TextView
+                    android:id="@+id/tvRevenueDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:background="@color/colorText"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Revenue Note"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvRevenueNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:background="@color/colorText"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

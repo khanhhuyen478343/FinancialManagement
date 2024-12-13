@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="398dp"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="4dp">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_margin="0dp"
+            android:background="@drawable/rounded_corners"
+            android:gravity="center"
+            android:text=" Recurring Expense "
+            android:textColor="@color/colorText"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Category" />
+
+        <EditText
+            android:id="@+id/etStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Start Date (yyyy-MM-dd)" />
+
+        <EditText
+            android:id="@+id/etEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="End Date (yyyy-MM-dd) (Optional)" />
+
+        <Spinner
+            android:id="@+id/spinnerRecurrenceType"
+            android:layout_width="360dp"
+            android:layout_height="41dp"
+            android:entries="@array/recurrence_types" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="288dp"
+                android:layout_height="37dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/gray"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Save"
+                tools:background="@color/momoPink" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

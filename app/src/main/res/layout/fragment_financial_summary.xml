@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FinancialSummary.FinancialSummaryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textFinancialSummary"
+            android:layout_width="379dp"
+            android:layout_height="101dp"
+            android:layout_margin="16dp"
+            android:textAlignment="center"
+            android:textSize="48sp" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/cbSummary"
+            android:layout_width="match_parent"
+            android:layout_height="321dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent">
+
+        </com.github.mikephil.charting.charts.PieChart>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTopTotal"
+            android:layout_width="377dp"
+            android:layout_height="183dp"
+            android:layout_margin="16dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

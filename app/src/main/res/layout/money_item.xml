@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="145dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/id_img"
+            android:layout_width="148dp"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:layout_marginTop="0dp"
+            tools:srcCompat="@tools:sample/avatars" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="1dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_icon"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="0dp"
+            android:text="Icon"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Các TextView hiển thị thông tin tỷ giá -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Buy Cash"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_BuyCash"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="0000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sell Cash"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_SellCash"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="0000000" />
+        </LinearLayout>
+
+        <!-- Các phần tử tương tự cho Sell Cash, Buy Transfer, Sell Transfer -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Buy Transfer"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_BuyTransfer"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="0000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sell Transfer"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_SellTransfer"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="0000000" />
+        </LinearLayout>
+
+        <!-- Các phần tử tiếp theo -->
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

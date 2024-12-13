@@ -1,0 +1,26 @@
+<!-- item_expense.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/expenseName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:text="Expense Name"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/expenseTotal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:textAlignment="center"
+        android:textColor="@color/colorBackground"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</LinearLayout>

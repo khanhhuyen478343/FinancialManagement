@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:background="@drawable/rounded_corners"
+            android:icon="@drawable/home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_revenue"
+            android:background="@drawable/rounded_corners"
+            android:icon="@drawable/money"
+             android:title="Revenues" />
+        <item
+            android:id="@+id/nav_variable_expenses"
+            android:background="@drawable/rounded_corners"
+            android:icon="@drawable/money"
+            android:title="Variable Expenses" />
+        <item
+            android:id="@+id/nav_recurringExpenses"
+            android:background="@drawable/rounded_corners"
+            android:icon="@drawable/money"
+            android:title="Recurring Expenses" />
+
+        <item
+            android:id="@+id/nav_statisticrevenue"
+            android:background="@drawable/rounded_corners"
+            android:icon="@drawable/statistics"
+            android:title="Revenues Statistic" />
+        <item
+            android:id="@+id/nav_statisticvariableexpenses"
+            android:background="@drawable/rounded_corners"
+            android:icon="@drawable/statistics"
+            android:title="Expenses Statistic" />
+        <item
+            android:id="@+id/nav_financialsummary"
+            android:background="@drawable/rounded_corners"
+            android:icon="@drawable/statistics"
+            android:title="Financial Summary" />
+        <item
+            android:id="@+id/nav_introduction"
+            android:background="@drawable/rounded_corners"
+            android:icon="@drawable/help"
+            android:title="Privacy Policy" />
+
+        <item
+            android:id="@+id/nav_exit"
+            android:background="@drawable/rounded_corners"
+            android:icon="@drawable/logout"
+            android:title="Log out" />
+    </group>
+
+</menu>
